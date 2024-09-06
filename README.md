@@ -12,8 +12,8 @@ GET /api/books:
 
 Request: Retrieve all books.
 Expected Response: [] (empty array if no books) or a list of book objects.
-POST /api/books:
 
+POST /api/books:
 Request:
 {
 "title": "Test Book",
@@ -27,8 +27,8 @@ Expected Response:
 "author": "John Doe",
 "publicationYear": 2024
 }
-GET /api/books/1:
 
+GET /api/books/1:
 Request: Retrieve the book with ID 1.
 Expected Response:
 {
@@ -52,8 +52,8 @@ Expected Response:
 "author": "Jane Doe",
 "publicationYear": 2025
 }
-DELETE /api/books/1:
 
+DELETE /api/books/1:
 Request: Delete the book with ID 1.
 Expected Response: No content (HTTP Status 204).
 This approach ensures that the application is well-structured, with clear separation of responsibilities and easily testable endpoints.
